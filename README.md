@@ -87,3 +87,17 @@ Built with a scalable architecture and real-time order tracking, Zaikaa aims to 
 
 ## 🧾 Project Structure
 
+Zaikaa/
+│
+├── app/ # Source code
+│ ├── activities/
+│ ├── adapters/
+│ ├── fragments/
+│ ├── models/
+│ ├── utils/
+│ └── res/
+│
+├── assets/ # Icons, Images, and UI elements
+├── docs/ # SRS, Diagrams, and Presentation
+└── README.md # Project Documentation
+
