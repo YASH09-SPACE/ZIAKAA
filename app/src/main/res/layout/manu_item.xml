@@ -44,6 +44,7 @@
                 android:text="Food Name"
                 android:textColor="@color/black"
                 android:textSize="16sp"
+                android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="@+id/menuimageView"
                 app:layout_constraintStart_toEndOf="@+id/menuimageView"
                 app:layout_constraintTop_toTopOf="parent" />

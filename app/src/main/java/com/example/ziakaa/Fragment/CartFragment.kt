@@ -1,11 +1,13 @@
 package com.example.ziakaa.Fragment
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.ziakaa.PayOutActivity
 import com.example.ziakaa.R
 import com.example.ziakaa.adapter.CartAdapter
 import com.example.ziakaa.databinding.FragmentCartBinding
@@ -38,6 +40,10 @@ class CartFragment : Fragment() {
         val adapter = CartAdapter(ArrayList(cartFoodName), ArrayList(cartItemPrice), ArrayList(cartImage))
         binding.cartRecyclerView.layoutManager = LinearLayoutManager(requireContext())
         binding.cartRecyclerView.adapter = adapter
+        binding.proccedButton.setOnClickListener {
+            val intent = Intent(requireContext(), PayOutActivity::class.java)
+            startActivity(intent)
+        }
         return binding.root
     }
 

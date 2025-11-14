@@ -14,7 +14,10 @@ import com.example.ziakaa.R
 import com.example.ziakaa.adapter.PopulerAdapter
 import com.example.ziakaa.databinding.ActivityStartBinding
 import com.example.ziakaa.databinding.FragmentHomeBinding
+import com.example.ziakaa.menuBottomSheetFragment
 import com.google.common.math.Quantiles
+import dalvik.annotation.TestTarget
+import org.jetbrains.annotations.TestOnly
 import java.util.ArrayList
 
 class HomeFragment : Fragment() {
@@ -32,6 +35,10 @@ class HomeFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         binding = FragmentHomeBinding.inflate(inflater,container,false)
+        binding.viewAllMenu.setOnClickListener {
+            val bottomSheetDialog = menuBottomSheetFragment()
+            bottomSheetDialog.show(parentFragmentManager, "Test")
+        }
 
         return binding.root
 
@@ -65,7 +72,7 @@ class HomeFragment : Fragment() {
         val foodName = listOf("Burger","SandWhich","Momo","item")
         val Price = listOf("$5","$6","$7","$8")
         val PopulerFoodImages = listOf(R.drawable.menu1,R.drawable.menu2,R.drawable.menu3,R.drawable.menu4)
-        val adapter = PopulerAdapter(foodName,Price,PopulerFoodImages)
+        val adapter = PopulerAdapter(foodName,Price,PopulerFoodImages,requireContext())
         binding.PopulerRecyclerView.layoutManager = LinearLayoutManager(requireContext())
         binding.PopulerRecyclerView.adapter = adapter
     }

@@ -30,6 +30,8 @@
                 android:layout_marginLeft="16dp"
                 android:padding="2dp"
                 android:scaleType="centerCrop"
+                app:circularflow_defaultRadius="15dp"
+                app:circularflow_radiusInDP="5dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -42,7 +44,9 @@
                 android:layout_marginLeft="16dp"
                 android:fontFamily="@font/yeonsungregular"
                 android:text="TextView"
+                android:textColor="@color/black"
                 android:textSize="16sp"
+                android:textStyle="bold"
                 app:layout_constraintBottom_toTopOf="@+id/CartItemPrice"
                 app:layout_constraintStart_toEndOf="@+id/CartImage"
                 app:layout_constraintTop_toTopOf="parent" />
