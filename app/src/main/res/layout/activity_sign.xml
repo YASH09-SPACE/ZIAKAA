@@ -34,7 +34,7 @@
 
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/UserName"
         android:layout_width="325dp"
         android:layout_height="57dp"
         android:layout_marginStart="44dp"
@@ -54,7 +54,7 @@
 
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/EmailAddress"
         android:layout_width="325dp"
         android:layout_height="57dp"
         android:layout_marginStart="44dp"
@@ -68,12 +68,12 @@
         android:inputType="textEmailAddress"
         android:paddingLeft="15dp"
         android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="@+id/editTextText"
-        app:layout_constraintStart_toStartOf="@+id/editTextText"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+        app:layout_constraintEnd_toEndOf="@+id/UserName"
+        app:layout_constraintStart_toStartOf="@+id/UserName"
+        app:layout_constraintTop_toBottomOf="@+id/UserName" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/Password"
         android:layout_width="325dp"
         android:layout_height="57dp"
         android:layout_marginTop="20dp"
@@ -85,10 +85,10 @@
         android:inputType="textPassword"
         android:paddingLeft="15dp"
         android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/EmailAddress"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+        app:layout_constraintStart_toStartOf="@+id/EmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/EmailAddress" />
 
     <TextView
         android:id="@+id/textView6"
@@ -97,9 +97,9 @@
         android:layout_marginTop="16dp"
         android:fontFamily="@font/yeonsungregular"
         android:text="Or"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+        app:layout_constraintEnd_toEndOf="@+id/Password"
+        app:layout_constraintStart_toStartOf="@+id/Password"
+        app:layout_constraintTop_toBottomOf="@+id/Password" />
 
     <TextView
         android:id="@+id/textView7"
@@ -115,7 +115,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button"
+        android:id="@+id/GoogleButton"
         android:layout_width="152dp"
         android:layout_height="57dp"
         android:layout_marginTop="35dp"
@@ -126,13 +126,13 @@
         android:text="Google"
         android:textAllCaps="false"
         app:iconPadding="0dp"
-        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintEnd_toStartOf="@+id/FacebookButton"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button2"
+        android:id="@+id/FacebookButton"
         android:layout_width="152dp"
         android:layout_height="57dp"
         android:layout_marginTop="35dp"
@@ -144,11 +144,11 @@
         app:iconPadding="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintStart_toEndOf="@+id/GoogleButton"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/signbutton"
+        android:id="@+id/createAccountButton"
         android:layout_width="152dp"
         android:layout_height="57dp"
         android:layout_marginTop="45dp"
@@ -160,7 +160,7 @@
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/GoogleButton" />
 
     <TextView
         android:id="@+id/havebutton"
@@ -172,9 +172,9 @@
         android:textColor="#388E3C"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/signbutton"
-        app:layout_constraintStart_toStartOf="@+id/signbutton"
-        app:layout_constraintTop_toBottomOf="@+id/signbutton" />
+        app:layout_constraintEnd_toEndOf="@+id/createAccountButton"
+        app:layout_constraintStart_toStartOf="@+id/createAccountButton"
+        app:layout_constraintTop_toBottomOf="@+id/createAccountButton" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

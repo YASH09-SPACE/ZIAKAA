@@ -1,26 +1,82 @@
 {
   "project_info": {
-    "project_number": "85555781106",
-    "project_id": "zaikaa-1",
-    "storage_bucket": "zaikaa-1.firebasestorage.app"
+    "project_number": "549865700054",
+    "firebase_url": "https://admin-zaikaa-bf5e5-default-rtdb.firebaseio.com",
+    "project_id": "admin-zaikaa-bf5e5",
+    "storage_bucket": "admin-zaikaa-bf5e5.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:85555781106:android:b50fea50588d4caa3bdf6b",
+        "mobilesdk_app_id": "1:549865700054:android:e3edd5fe4f8e6f32c4a777",
         "android_client_info": {
-          "package_name": "com.example.ziakaa"
+          "package_name": "com.example.zaikaafood"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "549865700054-il65atkpmr2daci21tkqfvapdagf8hs0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.zaikaafood",
+            "certificate_hash": "db9859142760a0d6a9c3bcfa5b584652d004a4f7"
+          }
+        },
+        {
+          "client_id": "549865700054-d32dq62tsstdcb3msht6qhlqvttol9j6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
-          "current_key": "AIzaSyDsLt_-aGgdy0eO36lYvdpwMnomKtvto2o"
+          "current_key": "AIzaSyBziVEj0LVr2QALeLS-bDosVfiUgCTUe0E"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "549865700054-d32dq62tsstdcb3msht6qhlqvttol9j6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:549865700054:android:f040ed3d017c596cc4a777",
+        "android_client_info": {
+          "package_name": "com.example.ziakaa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "549865700054-3nj9je0dp4ovvs39v25bshr8q9mv64r7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ziakaa",
+            "certificate_hash": "8ea4b6915aaa36b16b46ce463eb934ff6280f68b"
+          }
+        },
+        {
+          "client_id": "549865700054-d32dq62tsstdcb3msht6qhlqvttol9j6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBziVEj0LVr2QALeLS-bDosVfiUgCTUe0E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "549865700054-d32dq62tsstdcb3msht6qhlqvttol9j6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }
