@@ -39,6 +39,7 @@
                 android:textSize="20sp" />
 
             <EditText
+                android:id="@+id/name_et"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -72,6 +73,7 @@
                 android:textSize="20sp" />
 
             <EditText
+                android:id="@+id/address_et"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
@@ -110,6 +112,7 @@ for previewing layouts and visual "
                 android:textSize="20sp" />
 
             <EditText
+                android:id="@+id/email_et"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -144,6 +147,7 @@ for previewing layouts and visual "
                 android:textSize="20sp" />
 
             <EditText
+                android:id="@+id/phone_et"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"

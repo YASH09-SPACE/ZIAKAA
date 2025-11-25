@@ -104,6 +104,17 @@ import com.google.firebase.database.database
          }
      }
 
+     override fun onStart() {
+         super.onStart()
+         val currentUser: FirebaseUser? = auth.currentUser
+         if (currentUser != null) {
+             val intent = Intent(this, MainActivity :: class.java)
+             startActivity(intent)
+             finish()
+         }
+     }
+
+
      private fun updateUi(user: FirebaseUser?) {
          val intent = Intent(this, MainActivity::class.java)
          startActivity(intent)

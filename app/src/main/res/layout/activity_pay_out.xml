@@ -48,10 +48,7 @@
             android:layout_marginEnd="16dp"
             android:background="@drawable/profileedittextshape"
             android:gravity="center_vertical"
-            android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView17">
+            android:orientation="horizontal">
 
             <TextView
                 android:layout_width="40dp"
@@ -64,6 +61,7 @@
                 android:textSize="20sp" />
 
             <EditText
+                android:id="@+id/name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -74,6 +72,7 @@
                 android:textColor="@color/black" />
 
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -82,10 +81,7 @@
             android:layout_marginEnd="16dp"
             android:background="@drawable/profileedittextshape"
             android:gravity="center_vertical"
-            android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView17">
+            android:orientation="horizontal">
 
             <TextView
                 android:layout_width="40dp"
@@ -98,6 +94,7 @@
                 android:textSize="20sp" />
 
             <EditText
+                android:id="@+id/address"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
@@ -106,13 +103,11 @@
                 android:background="@android:color/transparent"
                 android:ems="10"
                 android:inputType="textMultiLine"
-                android:text="Lorem ipsum is placeholder text
-commonly used in the graphic,
-print, and publishing industries
-for previewing layouts and visual "
+                android:text="Lorem ipsum is placeholder text"
                 android:textColor="@color/black" />
 
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="56dp"
@@ -121,10 +116,7 @@ for previewing layouts and visual "
             android:layout_marginTop="16dp"
             android:background="@drawable/profileedittextshape"
             android:gravity="center_vertical"
-            android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView17">
+            android:orientation="horizontal">
 
             <TextView
                 android:layout_width="40dp"
@@ -137,6 +129,7 @@ for previewing layouts and visual "
                 android:textSize="20sp" />
 
             <EditText
+                android:id="@+id/phone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -147,6 +140,7 @@ for previewing layouts and visual "
                 android:textColor="@color/black" />
 
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="56dp"
@@ -155,29 +149,47 @@ for previewing layouts and visual "
             android:layout_marginEnd="16dp"
             android:background="@drawable/profileedittextshape"
             android:gravity="center_vertical"
-            android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView17">
+            android:orientation="horizontal">
 
             <TextView
-                android:layout_width="40dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:fontFamily="@font/yeonsungregular"
                 android:paddingLeft="8dp"
                 android:text="Payment Method"
                 android:textColor="@color/black"
                 android:textSize="14sp" />
 
-            <ImageView
-                android:id="@+id/imageView4"
-                android:layout_width="210dp"
+            <RadioGroup
+                android:id="@+id/paymentMethodGroup"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/cashondelivery" />
+                android:orientation="horizontal"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1">
 
+                <RadioButton
+                    android:id="@+id/rb_cod"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="COD"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/yeonsungregular" />
+
+                <RadioButton
+                    android:id="@+id/rb_net_banking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="Net Banking"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/yeonsungregular" />
+            </RadioGroup>
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_marginTop="16dp"
@@ -187,10 +199,7 @@ for previewing layouts and visual "
             android:layout_marginEnd="16dp"
             android:background="@drawable/profileedittextshape"
             android:gravity="center_vertical"
-            android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView17">
+            android:orientation="horizontal">
 
             <TextView
                 android:layout_width="40dp"
@@ -203,6 +212,7 @@ for previewing layouts and visual "
                 android:textSize="14sp" />
 
             <EditText
+                android:id="@+id/totalAmount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -211,15 +221,16 @@ for previewing layouts and visual "
                 android:fontFamily="@font/yeonsungregular"
                 android:gravity="end"
                 android:inputType="none"
+                android:focusable="false"
                 android:paddingEnd="32dp"
-                android:text="$50"
+                android:text="50"
                 android:textColor="#388E3C"
                 android:textSize="20sp" />
 
         </LinearLayout>
-        
+
     </LinearLayout>
-    
+
     <androidx.appcompat.widget.AppCompatButton
         android:layout_width="match_parent"
         android:layout_height="56dp"

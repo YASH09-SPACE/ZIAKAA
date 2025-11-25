@@ -61,8 +61,8 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/buyAgainFoodButton"
-                android:layout_width="85dp"
-                android:layout_height="30dp"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
                 android:layout_marginEnd="32dp"
                 android:background="@drawable/redbutton"
                 android:fontFamily="@font/yeonsungregular"

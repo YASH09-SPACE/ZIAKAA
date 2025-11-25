@@ -44,6 +44,11 @@ dependencies {
     implementation("com.google.firebase:firebase-analytics")
     implementation("com.github.denzcoskun:ImageSlideshow:0.1.2")
     implementation("com.google.android.gms:play-services-auth:20.7.0")
+    implementation ("com.github.bumptech.glide:glide:4.16.0")
+    implementation("com.razorpay:checkout:1.6.35")
+// Use the latest version
+    //kapt ('com.github.bumptech.glide:compiler:4.16.0')
+
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
