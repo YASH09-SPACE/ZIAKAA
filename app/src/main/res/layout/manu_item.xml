@@ -53,6 +53,7 @@
                 android:id="@+id/menuPrice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
                 android:layout_marginTop="10dp"
                 android:text="$5"
                 android:textColor="@color/black"
@@ -60,7 +61,7 @@
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.757"
-                app:layout_constraintStart_toEndOf="@+id/menufoodName"
+                app:layout_constraintStart_toEndOf="@+id/menuimageView"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView

@@ -68,7 +68,36 @@ import com.google.firebase.database.database
                 launcher.launch(signInIntent)
             }
         }
+        binding.forgotPassword.setOnClickListener {
+            val emailInput = binding.EmailAddress.text.toString().trim()
+
+            if (emailInput.isEmpty()) {
+                Toast.makeText(this, "Enter your email to reset password", Toast.LENGTH_SHORT).show()
+            } else {
+                resetPassword(emailInput)
+            }
+        }
+
     }
+     private fun resetPassword(email: String) {
+         auth.sendPasswordResetEmail(email)
+             .addOnCompleteListener { task ->
+                 if (task.isSuccessful) {
+                     Toast.makeText(
+                         this,
+                         "Reset link sent to your email 🔗📩",
+                         Toast.LENGTH_LONG
+                     ).show()
+                 } else {
+                     Toast.makeText(
+                         this,
+                         "Failed to send reset email 😕",
+                         Toast.LENGTH_SHORT
+                     ).show()
+                 }
+             }
+     }
+
      private val launcher = registerForActivityResult (ActivityResultContracts. StartActivityForResult()) { result ->
          if (result.resultCode == Activity. RESULT_OK) {
              val task =  GoogleSignIn.getSignedInAccountFromIntent (result.data)

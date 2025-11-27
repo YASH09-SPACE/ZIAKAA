@@ -1,11 +1,13 @@
 package com.example.ziakaa.Fragment
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import com.example.ziakaa.LoginActivity
 import com.example.ziakaa.R
 import com.example.ziakaa.databinding.FragmentProfileBinding
 import com.example.ziakaa.model.UserModel
@@ -36,6 +38,10 @@ class ProfileFragment : Fragment() {
         binding.button5.setOnClickListener {
             updateUserData()
         }
+        binding.logoutBtn.setOnClickListener {
+            logoutUser()
+        }
+
 
         return binding.root
     }
@@ -65,6 +71,20 @@ class ProfileFragment : Fragment() {
             }
         })
     }
+    private fun logoutUser() {
+        FirebaseAuth.getInstance().signOut()
+
+        // Go to LoginActivity
+        val intent = Intent(requireContext(), LoginActivity::class.java)
+        startActivity(intent)
+
+        // Close current MainActivity so user can't go back
+        requireActivity().finish()
+
+        Toast.makeText(requireContext(), "Logged out successfully!", Toast.LENGTH_SHORT).show()
+    }
+
+
 
     private fun updateUserData() {
         // Get data from EditText fields using assumed IDs

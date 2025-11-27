@@ -64,9 +64,21 @@
         android:paddingLeft="15dp"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="@+id/EmailAddress"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/EmailAddress"
         app:layout_constraintTop_toBottomOf="@+id/EmailAddress" />
+
+    <TextView
+        android:id="@+id/forgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Forgot Password?"
+        android:fontFamily="@font/yeonsungregular"
+        android:textColor="#388E3C"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/Password"
+        app:layout_constraintStart_toStartOf="@+id/Password"
+        app:layout_constraintEnd_toEndOf="@+id/Password" />
 
     <TextView
         android:id="@+id/textView6"
@@ -77,7 +89,8 @@
         android:text="Or"
         app:layout_constraintEnd_toEndOf="@+id/Password"
         app:layout_constraintStart_toStartOf="@+id/Password"
-        app:layout_constraintTop_toBottomOf="@+id/Password" />
+        app:layout_constraintTop_toBottomOf="@+id/forgotPassword" />
+
 
     <TextView
         android:id="@+id/textView7"
